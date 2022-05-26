@@ -17,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="fvd-WU-SMT" kind="relationship" relationship="rootViewController" id="fmm-T9-rt2"/>
+                        <segue destination="fvd-WU-SMT" kind="relationship" relationship="rootViewController" id="3dk-es-aY1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhi-Pm-hqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-314" y="465"/>
         </scene>
-        <!--View Controller-->
+        <!--Villains-->
         <scene sceneID="fai-cs-yli">
             <objects>
-                <viewController id="fvd-WU-SMT" customClass="ViewController" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Villains" id="fvd-WU-SMT" userLabel="Villains" customClass="ViewController" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e9O-g6-6sg"/>
                         <viewControllerLayoutGuide type="bottom" id="ODX-bg-PWh"/>
@@ -67,6 +67,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="fvd-WU-SMT" id="Uur-tJ-eUY"/>
+                                    <outlet property="delegate" destination="7QF-am-FRV" id="BDu-80-mTe"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -78,16 +79,16 @@
                             <constraint firstItem="2Rn-aE-vQB" firstAttribute="top" secondItem="e9O-g6-6sg" secondAttribute="bottom" id="rH2-S7-3DN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7QF-am-FRV"/>
+                    <navigationItem key="navigationItem" title="Villains" id="7QF-am-FRV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZz-bF-YpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="546.37681159420299" y="464.73214285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--Villain Details-->
         <scene sceneID="k9m-mh-Ww4">
             <objects>
-                <viewController storyboardIdentifier="VillainDetailViewController" id="WC7-ya-VdH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VillainDetailViewController" title="Villain Details" id="WC7-ya-VdH" customClass="VillainDetailViewController" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CO9-Mh-VlG"/>
                         <viewControllerLayoutGuide type="bottom" id="nZH-wm-KuF"/>
@@ -119,6 +120,10 @@
                             <constraint firstItem="Xr1-tO-W7v" firstAttribute="bottom" secondItem="I3I-Ij-srW" secondAttribute="bottom" constant="-40" id="sBD-MA-Fud"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WGT-zY-muI"/>
+                    <connections>
+                        <outlet property="imageView" destination="Xr1-tO-W7v" id="ned-Hj-1ur"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OuI-GB-kxX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
