@@ -49,7 +49,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let detailController = self.storyboard!.instantiateViewController(withIdentifier: "VillainDetailViewController") as! VillainDetailViewController
         detailController.villain = self.allVillains[(indexPath as NSIndexPath).row]
         self.navigationController!.pushViewController(detailController, animated: true)
-    
+        
     }
 
 }
